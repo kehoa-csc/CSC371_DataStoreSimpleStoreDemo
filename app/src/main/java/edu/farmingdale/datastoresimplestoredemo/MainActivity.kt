@@ -74,6 +74,8 @@ fun DataStoreDemo(modifier: Modifier) {
         Button(onClick = {
             coroutineScope.launch {
                 store.saveUsername("somevaluehere")
+                store.saveHighscore(24)
+                store.saveDarkModePref(false)
             }
 
         }) {
@@ -82,7 +84,7 @@ fun DataStoreDemo(modifier: Modifier) {
     }
 }
 
-// ToDo 1: Modify the App to store a high score and a dark mode preference
+// ToDone 1: Modify the App to store a high score and a dark mode preference
 // ToDo 2: Modify the APP to store the username through a text field
 // ToDo 3: Modify the App to save the username when the button is clicked
 // ToDo 4: Modify the App to display the values stored in the DataStore
